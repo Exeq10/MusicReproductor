@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="img/disco.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>PlayReproductor E/S</title>
+  </head>
+  <body>
+    <section class="play">
+      <!-- reproductor -->
+
+      <div class="rep-play">
+        <div class="playlist" id="playList"></div>
+
+        <div class="player" id="player">
+          <div class="album-artist">
+            <img id="artist" src="./img/disco.png" alt="" />
+          </div>
+
+          <h4 class="name-sound text-black">Name sound</h4>
+          <h4 class="name-sound text-black">Name Artist</h4>
+          <div class="volume">
+            <img src="./img/icons/audio.png" alt="audio" class="audio" /><input
+              id="vol"
+              type="range"
+              min="0"
+              max="1"
+              step="0.1"
+              class="slider"
+            />
+          </div>
+
+          <div class="controls">
+            <button class="btn-m" id="back">
+              <img src="img/icons/rewind.png" alt="rewind" />
+            </button>
+            <button class="btn-m" id="play">
+              <img src="img/icons/play.png" alt="play" />
+            </button>
+            <button class="btn-m" id="pause">
+              <img src="./img/icons/pausa.png" alt="pause" />
+            </button>
+            <button class="btn-m" id="next">
+              <img src="img/icons/fast-forward.png" alt="play" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <h4>Creado por E/S</h4>
+    </footer>
+
+    <script src="./js/player.js"></script>
+  </body>
+</html>
